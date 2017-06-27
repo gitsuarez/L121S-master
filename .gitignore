@@ -51,3 +51,6 @@ vendor/facebook/graph-sdk/src/Facebook/HttpClients/FacebookHttpClientInterface.p
 /vendor
 /vendor/*
 vendor/*
+
+cache/*
+cache
