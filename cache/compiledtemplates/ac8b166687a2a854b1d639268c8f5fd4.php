@@ -1,0 +1,1 @@
+<h1>Manage departments and their groups</h1><ul><li><a href="/richard/sites/live121support.com-master/index.php/site_admin/department/departments">Departments</a></li><li><a href="/richard/sites/live121support.com-master/index.php/site_admin/department/group">Departments groups</a></li></ul>

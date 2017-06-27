@@ -1,0 +1,10 @@
+/**
+* Rename this file to override_rtl.css to take effect
+* Write your style overrides here for RTL languages
+**/
+
+.menu-status-txt {
+    text-transform: uppercase;
+    color: #5da423;
+    font-weight: 700;
+}

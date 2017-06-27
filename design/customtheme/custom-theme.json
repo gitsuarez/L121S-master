@@ -1,0 +1,19 @@
+{ 
+	"name":"Custom theme",
+	"onl_bcolor":"67828c",
+	"text_color":"fafafa",
+	"header_background":"67828c",
+	"widget_border_color":"67828c",
+	"need_help_bcolor":"67828c",
+	"need_help_hover_bg":"4DBCE9",
+	"need_help_tcolor":"ffffff",
+	"need_help_border":"4DBCE9",
+	"need_help_close_bg":"67828c",
+	"need_help_close_hover_bg":"4DBCE9",
+	"custom_status_css":"#lhc_header{height: 25px !important;}\r\n.lh_min{overflow-y: hidden !important;}\r\n#lhc_status_container:hover,#lhc_faq_container:hover{background-color:#4DBCE9;}\r\n#lhc_status_container,#lhc_questionary_container,#lhc_faq_container,#lhc_chatbox_container{box-shadow: 1px -1px 5px rgb(56, 56, 56);}\r\n","custom_container_css":"#lhc_container_chatbox,\r\n#lhc_container_questionary,\r\n#lhc_container,\r\n#lhc_container_faq{box-shadow: 1px -1px 5px rgb(56, 56, 56);overflow-y: hidden !important;}",
+	"custom_widget_css":"",
+	"need_help_header":"",
+	"need_help_text":"",
+	"online_text":"",
+	"offline_text":""
+}

@@ -1,0 +1,13 @@
+{
+    "name": "aepacot/live121support",
+    "require": {
+        "facebook/graph-sdk": "^5.5",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "authors": [
+        {
+            "name": "Alvin Pacot",
+            "email": "apacot@MacBooks-MacBook-Pro.local"
+        }
+    ]
+}

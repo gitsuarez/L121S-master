@@ -1,0 +1,2 @@
+<?php
+ $tpl = erLhcoreClassTemplate::getInstance( 'lhsystem/configuration.tpl.php'); $Result['content'] = $tpl->fetch(); $Result['path'] = array(array('url' => '/richard/sites/live121support.com-master/index.php/site_admin/system/configuration','title' => 'System configuration')) ?>

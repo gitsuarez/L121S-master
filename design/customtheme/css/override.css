@@ -1,0 +1,49 @@
+/**
+* Rename this file to override.css to take effect
+* Write your style overrides here for LTR languages
+**/
+
+.menu-status-txt {
+    text-transform: uppercase;
+    color: #5da423;
+    font-weight: 700;
+}
+
+.user-fb-wrapper{
+    background: #efefef;
+    padding: 7px 0px;
+    margin-top: 7px;
+    margin: 0px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.user-fb-wrapper .fb-logout{
+	background:url('/design/customtheme/images/general/logout.png') no-repeat;
+	position: absolute;
+    height: 16px;
+    background-size: cover;
+    border: none;
+    top: -1px;
+    right: 7px;
+    width: 14px;
+}
+.user-fb-wrapper .fb-details{margin: -5px 0 0 -29px;}
+.user-fb-wrapper .fb-details b{
+	position: relative;
+	top: 6px;
+}
+.fbimg { height: 19px !important; }
+.user-fb-wrapper .fb-logout:hover{background-position: 0 -18px;}
+.user-fb-wrapper .facebook-icon{
+	position: absolute;
+    top: 19px;
+    left: 8px;
+}
+.user-fb-wrapper .fb-profile{
+	border-radius: 4px;
+    width: 65%;
+}
+.user-fb-wrapper .facebook-icon img{
+	width: 14px;
+}
+.form-size-textarea{height:65px!important;max-width:286px;}

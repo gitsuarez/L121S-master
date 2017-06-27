@@ -1,0 +1,1 @@
+<h1>Chatbox</h1><h4>General</h4><ul><li><a href="/richard/sites/live121support.com-master/index.php/site_admin/chatbox/generalsettings">General settings</a></li><li><a href="/richard/sites/live121support.com-master/index.php/site_admin/chatbox/list">Chatbox list</a></li></ul>

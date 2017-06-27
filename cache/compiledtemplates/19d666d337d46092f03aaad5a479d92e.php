@@ -1,0 +1,1 @@
+<h1>Form</h1><ul><li><a href="/richard/sites/live121support.com-master/index.php/site_admin/abstract/list/Form">List of forms</a></li><?php  if (erLhcoreClassUser::instance()->hasAccessTo('lhform','generate_js')) : ?><li><a href="/richard/sites/live121support.com-master/index.php/site_admin/form/embedcode">Page embed code</a></li><?php  endif;?></ul>
