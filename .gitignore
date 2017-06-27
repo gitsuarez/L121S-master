@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+vendor/facebook/graph-sdk/src/Facebook/HttpClients/FacebookHttpClientInterface.php
+
+
+/vendor
+/vendor/*
+vendor/*
