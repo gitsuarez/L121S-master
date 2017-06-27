@@ -44,48 +44,10 @@ if ($theme !== false && $theme->explain_text != '') : ?>
 <?php $formResubmitId = 'form-start-chat'; ?>
 <?php include(erLhcoreClassDesign::designtpl('lhchat/part/auto_resubmit.tpl.php'));?>
 
-<script type="text/javascript">
-	var myWindow;
-	var cInterval;
-	function fblogout() {
-		myWindow  = window.open('/facebook-logout.php', '_blank', 'height=620, width=620');
-		cInterval = setInterval(function(){ 
-			if(myWindow.closed){
-				window.location.reload();
-				clearInterval(cInterval);
-			}
-		}, 1000);	
-	}
-	function fbauth(){
-		myWindow  = window.open('/facebook-auth.php', '_blank', 'height=620, width=620');
-		cInterval = setInterval(function(){ 
-			if(myWindow.closed){
-				window.location.reload();
-				clearInterval(cInterval);
-			}
-		}, 1000);		
-	}
-</script>
+<?php include(erLhcoreClassDesign::designtpl('lhchat/part/facebook_pre_form_multiinclude.tpl.php'));?>
 
 <?php if(isset($_SESSION['fb_id'])){ ?>
-<span class="fb-greetings">
-	<b>Hello there!</b>
-</span>
-<div class="row user-fb-wrapper" style="">
-	<div class="col-md-3 col-sm-3 col-xs-3" >
-		<img class="fb-profile" src="http://graph.facebook.com/<?php echo $_SESSION['fb_id']; ?>/picture">
-		<div class="facebook-icon"><img src="/design/customtheme/images/general/facebook-icon.png"></div>
-	</div>
-	<div class="col-md-9 col-sm-9 col-xs-9">
-		<?php 
-			echo '<p class="fb-details"><b>'.$_SESSION['fb_fn'] . '</b><br/>';
-			echo $_SESSION['fb_ea'] . '</p>';
-		?>
-		<a href="#" class="fb-logout" onClick="fblogout()"></a>
-		<input type="hidden" name="Username" value="<?php echo htmlspecialchars($_SESSION['fb_fn']);?>" />
-		<input type="hidden" name="Email" value="<?php echo htmlspecialchars($_SESSION['fb_ea']);?>" />
-	</div>
-</div>
+	<?php include(erLhcoreClassDesign::designtpl('lhchat/part/facebook_data_preview.tpl.php'));?>
 <?php } else { ?>
 <div class="row">
     <?php if (isset($start_data_fields['name_visible_in_page_widget']) && $start_data_fields['name_visible_in_page_widget'] == true) : $hasExtraField = true;?>
@@ -123,25 +85,8 @@ if ($theme !== false && $theme->explain_text != '') : ?>
     <?php endif; ?>
 </div>
 
-<div class="row">
-	
-	<div class="col-md-12">
-		<div class="form-group text-center">
-	        <label class="control-label"><?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('chat/startchat','Save Time & ');?></label>
-	        <?php			
-				echo '<a href="#" id="fblogin" onClick="fbauth()" class="sc-btn sc--facebook"> 
-						<span class="sc-icon">
-	      					<svg viewBox="0 0 33 33" width="25" height="25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M 17.996,32L 12,32 L 12,16 l-4,0 l0-5.514 l 4-0.002l-0.006-3.248C 11.993,2.737, 13.213,0, 18.512,0l 4.412,0 l0,5.515 l-2.757,0 c-2.063,0-2.163,0.77-2.163,2.209l-0.008,2.76l 4.959,0 l-0.585,5.514L 18,16L 17.996,32z"></path></g></svg>
-						</span>
-					  	<span class="sc-text">
-					      Login with Facebook
-					  	</span>
-				</a>';
-			?>
+<?php include(erLhcoreClassDesign::designtpl('lhchat/part/facebook_form.tpl.php'));?>
 
-		</div>
-	</div>
-</div>
 <?php } ?>
 <?php if (isset($start_data_fields['phone_visible_in_page_widget']) && $start_data_fields['phone_visible_in_page_widget'] == true) : $hasExtraField = true;?>
 <?php if (isset($start_data_fields['phone_hidden']) && $start_data_fields['phone_hidden'] == true) : ?>

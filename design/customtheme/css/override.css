@@ -47,3 +47,112 @@
 	width: 14px;
 }
 .form-size-textarea{height:65px!important;max-width:286px;}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 5px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.navbar-brand img {
+    display: inline-block;
+}
+
+.navbar-brand span {
+    font-weight: 700;
+    color: #e04152;
+    position: relative;
+    top: 8px;
+    left: 8px;
+}
+
+.input-checkbox, input[type="checkbox"] {
+    margin-right: 5px !important;
+}
+
+.main-header .navbar {
+    -webkit-transition: margin-left .3s ease-in-out;
+    -o-transition: margin-left .3s ease-in-out;
+    transition: margin-left .3s ease-in-out;
+    margin-bottom: 0;
+    margin-left: 219px;
+    border: none;
+    min-height: 50px;
+    border-radius: 0;
+    border-left: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+}
+
+@media (min-width: 768px) {
+    #wrapper {
+        border-top: 1px solid #e7e7e7;
+        -webkit-transition: padding-left .3s ease-in-out;
+        -o-transition: padding-left .3s ease-in-out;
+        transition: padding-left .3s ease-in-out;
+    }
+
+    #wrapper.toggled {
+        padding-left: 65px;
+    }
+
+    #wrapper #sidebar-wrapper {
+        -webkit-transition: margin-left .3s ease-in-out, width .3s ease-in-out;
+        -o-transition: margin-left .3s ease-in-out, width .3s ease-in-out;
+        transition: margin-left .3s ease-in-out, width .3s ease-in-out;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 65px;
+        display: block;
+        margin-left: -65px;
+    }
+
+    #wrapper #sidebar-wrapper i {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    #wrapper.toggled #sidebar-wrapper i {
+        font-size: 25px;
+        padding-left: 10px;
+        width: 2em;
+    }
+
+    #wrapper.toggled #chat-li .nav{
+        display: none;
+    }
+
+    #wrapper.toggled #module-li .nav{
+        display: none;
+    }
+}
+
+.toggled .main-header .navbar-lhc {
+    margin-left: 64px;
+}
+
+.sidebar-floater#chat {
+    top: 99px;
+}
+
+.sidebar-floater#modules {
+    top: 185px;
+}
+
+.sidebar-floater {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: #eee;
+}
+
+
+.sidebar {
+    height: 100vh;
+    background-color: #efefef;
+}

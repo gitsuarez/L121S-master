@@ -70,5 +70,6 @@ if (!!window.postMessage) {
 		echo $debug->generateOutput();
 } ?>
 </div>
+
 </body>
 </html>

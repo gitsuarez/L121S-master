@@ -1980,8 +1980,9 @@ function lh(){
 		if (typeof this.notificationsArray[chat_id] !== 'undefined' && this.backgroundChats.indexOf(chat_id) == -1) {
 			this.notificationsArray[chat_id].close();
 			delete this.notificationsArray[chat_id];
-			clearTimeout(this.soundIsPlaying);
 		};
+		
+		clearTimeout(this.soundIsPlaying);
 	}
 	
 	this.showMyPermissions = function(user_id) {
@@ -2282,10 +2283,10 @@ function lh(){
     {
     	if (inst.text() == 'visibility_off'){
     		$.get(this.wwwDir+  'user/setinvisible/false');
-    		inst.text('visibilitydsdfs');
+    		inst.text('visibility');
     	} else {
     		$.get(this.wwwDir+  'user/setinvisible/true');
-    		inst.text('visibility_offd');
+    		inst.text('visibility_off');
     	}
     	return false;
     };

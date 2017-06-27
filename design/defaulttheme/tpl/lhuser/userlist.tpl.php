@@ -3,6 +3,7 @@
 <?php include(erLhcoreClassDesign::designtpl('lhuser/userlist/search_panel.tpl.php')); ?>
 
 <?php
+    print_r($currentUser);
 	$canEdit = $currentUser->hasAccessTo('lhuser','edituser');
 	$canDelete = $currentUser->hasAccessTo('lhuser','deleteuser');
 ?>
